@@ -6,7 +6,7 @@ $bottom-sheet-hidden-bottom-padding: 80px !default;
 $bottom-sheet-header-height: 7 * $baseline-grid !default;
 $bottom-sheet-grid-font-weight: 400 !default;
 
-md-bottom-sheet {
+md-bottom-sheet, .md-bottom-sheet {
   position: absolute;
   left: 0;
   right: 0;
@@ -50,14 +50,14 @@ md-bottom-sheet {
     white-space: nowrap;
   }
 
-  md-inline-icon {
+  md-inline-icon, .md-inline-icon {
     display: inline-block;
     height: 24px;
     width: 24px;
     fill: #444;
   }
 
-  md-list-item {
+  md-list-item, .md-list-item {
     display: flex;
     outline: none;
 
@@ -67,7 +67,7 @@ md-bottom-sheet {
   }
 
   &.md-list {
-    md-list-item {
+    md-list-item, .md-list-item {
       padding: 0;
       align-items: center;
       height: $bottom-sheet-list-item-height;
@@ -82,7 +82,7 @@ md-bottom-sheet {
     padding-right: 3 * $baseline-grid;
     padding-top: 0;
 
-    md-list {
+    md-list, .md-list {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
@@ -90,7 +90,7 @@ md-bottom-sheet {
       align-items: center;
     }
 
-    md-list-item {
+    md-list-item, .md-list-item {
       flex-direction: column;
       align-items: center;
       transition: all 0.5s;
@@ -170,7 +170,7 @@ md-bottom-sheet {
 
 // IE only
 @media screen and (-ms-high-contrast: active) {
-  md-bottom-sheet {
+  md-bottom-sheet, .md-bottom-sheet {
     border: 1px solid #fff;
   }
 }

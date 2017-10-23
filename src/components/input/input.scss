@@ -26,7 +26,7 @@ $icon-float-focused-top: -8px !default;
 
 $input-resize-handle-height: 10px !default;
 
-md-input-container {
+md-input-container, .md-input-container {
   @include pie-clearfix();
   display: inline-block;
   position: relative;
@@ -48,7 +48,7 @@ md-input-container {
     min-width: 1px;
   }
 
-  > md-icon {
+  > md-icon, > .md-icon {
     position: absolute;
     top: $icon-top-offset;
     @include rtl(left, 2px, auto);
@@ -322,7 +322,7 @@ md-input-container {
       position: absolute;
     }
 
-    > md-icon {
+    > md-icon, > .md-icon {
       top: $icon-top-offset;
       @include rtl(left, 2px, auto);
       @include rtl(right, auto, 2px);
@@ -354,7 +354,7 @@ md-input-container {
     @include rtl(padding-left, 0, $icon-offset);
     @include rtl(padding-right, $icon-offset, 0);
 
-    > md-icon:last-of-type {
+    > md-icon:last-of-type, > .md-icon:last-of-type {
       margin: 0;
 
       @include rtl(right, 2px, auto);
@@ -391,7 +391,10 @@ md-input-container {
 }
 
 @media screen and (-ms-high-contrast: active) {
-  md-input-container.md-default-theme > md-icon {
+  md-input-container.md-default-theme > md-icon,
+  md-input-container.md-default-theme > .md-icon,
+  .md-input-container.md-default-theme > md-icon,
+  .md-input-container.md-default-theme > .md-icon {
     fill: #fff;
   }
 }

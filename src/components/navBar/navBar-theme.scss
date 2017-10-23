@@ -46,14 +46,14 @@
         background: '{{accent-contrast-0.1}}';
       }
     }
-    md-nav-ink-bar {
+    md-nav-ink-bar, .md-nav-ink-bar {
       color: '{{primary-600-1}}';
       background: '{{primary-600-1}}';
     }
   }
 }
 
-md-nav-bar.md-THEME_NAME-theme {
+md-nav-bar.md-THEME_NAME-theme, .md-nav-bar.md-THEME_NAME-theme {
 
   .md-nav-bar {
     background-color: transparent;
@@ -64,7 +64,7 @@ md-nav-bar.md-THEME_NAME-theme {
     color: '{{foreground-2}}';
   }
 
-  md-nav-ink-bar {
+  md-nav-ink-bar, .md-nav-ink-bar {
     color: '{{accent-color}}';
     background: '{{accent-color}}';
   }
@@ -82,12 +82,21 @@ md-nav-bar.md-THEME_NAME-theme {
   }
 }
 
-md-toolbar > md-nav-bar.md-THEME_NAME-theme {
+md-toolbar > md-nav-bar.md-THEME_NAME-theme,
+md-toolbar > .md-nav-bar.md-THEME_NAME-theme,
+.md-toolbar > md-nav-bar.md-THEME_NAME-theme,
+.md-toolbar > .md-nav-bar.md-THEME_NAME-theme {
   @include md-nav-bar-primary();
 }
-md-toolbar.md-accent > md-nav-bar.md-THEME_NAME-theme {
+md-toolbar.md-accent > md-nav-bar.md-THEME_NAME-theme,
+md-toolbar.md-accent > .md-nav-bar.md-THEME_NAME-theme,
+.md-toolbar.md-accent > md-nav-bar.md-THEME_NAME-theme,
+.md-toolbar.md-accent > .md-nav-bar.md-THEME_NAME-theme {
   @include md-nav-bar-accent();
 }
-md-toolbar.md-warn > md-nav-bar.md-THEME_NAME-theme {
+md-toolbar.md-warn > md-nav-bar.md-THEME_NAME-theme,
+md-toolbar.md-warn > .md-nav-bar.md-THEME_NAME-theme,
+.md-toolbar.md-warn > md-nav-bar.md-THEME_NAME-theme,
+.md-toolbar.md-warn > .md-nav-bar.md-THEME_NAME-theme {
   @include md-nav-bar-warn();
 }

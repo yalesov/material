@@ -1,7 +1,7 @@
 $card-padding: 16px !default;
 $card-box-shadow: $whiteframe-shadow-1dp !default;
 
-md-card {
+md-card, .md-card {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -9,33 +9,33 @@ md-card {
 
   box-shadow: $card-box-shadow;
 
-  md-card-header {
+  md-card-header, .md-card-header {
     padding: $card-padding;
     display: flex;
     flex-direction: row;
 
     &:first-child {
-      md-card-avatar {
+      md-card-avatar, .md-card-avatar {
        @include rtl-prop(margin-right, margin-left, 12px, auto);
       }
     }
 
     &:last-child {
-      md-card-avatar {
+      md-card-avatar, .md-card-avatar {
         @include rtl-prop(margin-left, margin-right, 12px, auto);
       }
     }
 
-    md-card-avatar {
+    md-card-avatar, .md-card-avatar {
       width: 40px;
       height: 40px;
 
       .md-user-avatar,
-      md-icon{
+      md-icon{, .md-icon{
         border-radius: 50%;
       }
 
-      md-icon {
+      md-icon, .md-icon {
         padding: 8px;
         > svg {
           // Safari workaround for any SVG with padded parent
@@ -44,7 +44,7 @@ md-card {
         }
       }
 
-      & + md-card-header-text {
+      & + md-card-header-text, & + .md-card-header-text {
         max-height: 40px;
 
         .md-title {
@@ -53,7 +53,7 @@ md-card {
       }
     }
 
-    md-card-header-text {
+    md-card-header-text, .md-card-header-text {
       display: flex;
       flex: 1;
       flex-direction: column;
@@ -66,7 +66,9 @@ md-card {
 
   > img,
   > md-card-header img,
-  md-card-title-media img {
+  > .md-card-header img,
+  md-card-title-media img,
+  .md-card-title-media img {
     box-sizing: border-box;
     display: flex;
     flex: 0 0 auto;
@@ -74,17 +76,17 @@ md-card {
     height: auto;
   }
 
-  md-card-title {
+  md-card-title, .md-card-title {
     padding: 3 * $card-padding / 2 $card-padding $card-padding;
     display: flex;
     flex: 1 1 auto;
     flex-direction: row;
 
-    & + md-card-content {
+    & + md-card-content, & + .md-card-content {
       padding-top: 0;
     }
 
-    md-card-title-text {
+    md-card-title-text, .md-card-title-text {
       flex: 1;
       flex-direction: column;
       display: flex;
@@ -101,7 +103,7 @@ md-card {
       }
     }
 
-    md-card-title-media {
+    md-card-title-media, .md-card-title-media {
       margin-top: - $card-padding / 2;
 
       .md-media-sm {
@@ -119,7 +121,7 @@ md-card {
     }
   }
 
-  md-card-content {
+  md-card-content, .md-card-content {
     display: block;
     padding: $card-padding;
 
@@ -139,7 +141,7 @@ md-card {
     }
   }
 
-  .md-actions, md-card-actions {
+  .md-actions, md-card-actions, .md-card-actions {
     margin: $baseline-grid;
 
     &.layout-column {
@@ -163,7 +165,7 @@ md-card {
       }
     }
 
-    md-card-icon-actions {
+    md-card-icon-actions, .md-card-icon-actions {
       flex: 1;
       justify-content: flex-start;
       display: flex;
@@ -196,7 +198,7 @@ md-card {
         }
       }
 
-      & + md-card-icon-actions {
+      & + md-card-icon-actions, & + .md-card-icon-actions {
         flex: 1;
         justify-content: flex-end;
         display: flex;
@@ -205,14 +207,14 @@ md-card {
     }
   }
 
-  md-card-footer {
+  md-card-footer, .md-card-footer {
     margin-top: auto;
     padding: $card-padding;
   }
 }
 
 @media screen and (-ms-high-contrast: active) {
-  md-card {
+  md-card, .md-card {
     border: 1px solid #fff;
   }
 }

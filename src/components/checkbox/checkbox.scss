@@ -10,12 +10,12 @@ $checkbox-text-margin: 10px !default;
 $checkbox-top: 12px !default;
 
 .md-inline-form {
-  md-checkbox {
+  md-checkbox, .md-checkbox {
     margin: 19px 0 18px;
   }
 }
 
-md-checkbox {
+md-checkbox, .md-checkbox {
   box-sizing: border-box;
   display: inline-block;
   margin-bottom: $checkbox-margin;

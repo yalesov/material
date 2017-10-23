@@ -1,4 +1,4 @@
-md-divider {
+md-divider, .md-divider {
   display: block;
   border-top-width: 1px;
   border-top-style: solid;
@@ -15,7 +15,7 @@ md-divider {
 .layout-md-row, .layout-gt-md-row,
 .layout-lg-row, .layout-gt-lg-row,
 .layout-xl-row {
-  & > md-divider {
+  & > md-divider, & > .md-divider {
     border-top-width: 0;
     border-right-width: 1px;
     border-right-style: solid;

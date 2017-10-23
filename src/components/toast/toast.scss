@@ -9,7 +9,7 @@ $md-toast-text-padding: $button-left-right-padding !default;
   padding: 0 $md-toast-text-padding;
 }
 
-md-toast {
+md-toast, .md-toast {
   position: absolute;
   z-index: $z-index-toast;
 
@@ -144,7 +144,7 @@ md-toast {
 }
 
 @media (max-width: $layout-breakpoint-sm - 1) {
-  md-toast {
+  md-toast, .md-toast {
     left: 0;
     right: 0;
     width: 100%;
@@ -170,7 +170,7 @@ md-toast {
 }
 
 @media (min-width: $layout-breakpoint-sm) {
-  md-toast {
+  md-toast, .md-toast {
     min-width: 288px + $toast-margin * 2;
     &.md-bottom {
       bottom: 0;
@@ -214,7 +214,7 @@ md-toast {
 }
 
 @media (min-width: $layout-breakpoint-lg) {
-  md-toast {
+  md-toast, .md-toast {
     .md-toast-content {
       max-width: $baseline-grid * 71;
     }
@@ -222,7 +222,7 @@ md-toast {
 }
 
 @media screen and (-ms-high-contrast: active) {
-  md-toast {
+  md-toast, .md-toast {
     border: 1px solid #fff;
   }
 }

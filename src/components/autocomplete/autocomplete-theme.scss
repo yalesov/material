@@ -1,10 +1,11 @@
-md-autocomplete.md-THEME_NAME-theme {
+md-autocomplete.md-THEME_NAME-theme,
+.md-autocomplete.md-THEME_NAME-theme {
   background: '{{background-A100}}';
   &[disabled]:not([md-floating-label]) {
     background: '{{background-100}}';
   }
   button {
-    md-icon {
+    md-icon, .md-icon {
       path {
         fill: '{{background-600}}';
       }

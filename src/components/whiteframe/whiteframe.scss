@@ -72,13 +72,13 @@
 }
 
 @media screen and (-ms-high-contrast: active) {
-  md-whiteframe {
+  md-whiteframe, .md-whiteframe {
     border: 1px solid #fff;
   }
 }
 
 @media print {
-  md-whiteframe, [md-whiteframe] {
+  md-whiteframe, .md-whiteframe, [md-whiteframe] {
     background-color: #ffffff;
   }
 }

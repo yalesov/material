@@ -189,7 +189,7 @@ button.md-button::-moz-focus-inner {
 // because '.md-button' uses `display:inline-block;`.
 .md-button.md-icon-button,
 button.md-button.md-fab {
-  md-icon {
+  md-icon, .md-icon {
     display: block;
   }
 }

@@ -12,7 +12,7 @@ $md-toolbar-padding: 16px !default;
 
 $icon-button-margin-offset: rem(-0.800) !default;
 
-md-toolbar {
+md-toolbar, .md-toolbar {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ md-toolbar {
     transition: box-shadow $swift-ease-in-out-duration linear;
   }
 
-  md-toolbar-filler {
+  md-toolbar-filler, .md-toolbar-filler {
     width: 9 * $baseline-grid;
   }
 
@@ -73,12 +73,12 @@ md-toolbar {
     @include rtl-prop(margin-left, margin-right, $md-toolbar-indent-margin, auto);
   }
 
-  ~ md-content {
-    > md-list {
+  ~ md-content, ~ .md-content {
+    > md-list, > .md-list {
       padding: 0;
 
-      md-list-item:last-child {
-        md-divider {
+      md-list-item:last-child, .md-list-item:last-child {
+        md-divider, .md-divider {
           display: none;
         }
       }
@@ -115,14 +115,14 @@ md-toolbar {
     display: flex;
     align-items: center;
   }
-  md-checkbox {
+  md-checkbox, .md-checkbox {
     margin: inherit;
   }
   .md-button {
     margin-top: 0;
     margin-bottom: 0;
 
-    &, &.md-icon-button md-icon {
+    &, &.md-icon-button md-icon, &.md-icon-button .md-icon {
       transition-duration: $swift-ease-in-out-duration;
       transition-timing-function: $swift-ease-in-out-timing-function;
       transition-property: background-color, fill, color;
@@ -142,7 +142,7 @@ md-toolbar {
     @include rtl-prop(margin-right, margin-left, $icon-button-margin-offset, auto);
   }
 
-  &> md-menu:last-child {
+  &> md-menu:last-child, &> .md-menu:last-child {
     @include rtl-prop(margin-right, margin-left, $icon-button-margin-offset, auto);
     & > .md-button {
       @include rtl-prop(margin-right, margin-left, 0, auto);
@@ -156,7 +156,7 @@ md-toolbar {
 
 // Handle mobile portrait
 @media (min-width: 0) and (max-width: $layout-breakpoint-sm - 1) and (orientation: portrait) {
-  md-toolbar {
+  md-toolbar, .md-toolbar {
     min-height: $md-toolbar-height-mobile-portrait;
   }
 
@@ -168,7 +168,7 @@ md-toolbar {
 
 // Handle mobile landscape
 @media (min-width: 0) and (max-width: $layout-breakpoint-sm - 1) and (orientation: landscape) {
-  md-toolbar {
+  md-toolbar, .md-toolbar {
     min-height: $md-toolbar-height-mobile-landscape;
   }
 

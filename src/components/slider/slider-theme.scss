@@ -1,4 +1,4 @@
-md-slider.md-THEME_NAME-theme {
+md-slider.md-THEME_NAME-theme, .md-slider.md-THEME_NAME-theme {
 
   .md-track {
     background-color: '{{foreground-3}}';
@@ -169,11 +169,11 @@ md-slider.md-THEME_NAME-theme {
   }
 }
 
-md-slider-container {
+md-slider-container, .md-slider-container {
   &[disabled] {
     & > *:first-child,
     & > *:last-child {
-      &:not(md-slider){
+      &:not(md-slider):not(.md-slider){
         color: '{{foreground-3}}';
       }
     }

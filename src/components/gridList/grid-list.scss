@@ -1,16 +1,16 @@
-md-grid-list {
+md-grid-list, .md-grid-list {
   box-sizing: border-box;
   display: block;
   position: relative;
 
-  md-grid-tile,
-  md-grid-tile > figure,
-  md-grid-tile-header,
-  md-grid-tile-footer {
+  md-grid-tile, .md-grid-tile,
+  md-grid-tile > figure, .md-grid-tile > figure,
+  md-grid-tile-header, .md-grid-tile-header,
+  md-grid-tile-footer, .md-grid-tile-footer {
     box-sizing: border-box;
   }
 
-  md-grid-tile {
+  md-grid-tile, .md-grid-tile {
     display: block;
     position: absolute;
 
@@ -29,8 +29,8 @@ md-grid-list {
     }
 
     // Headers & footers
-    md-grid-tile-header,
-    md-grid-tile-footer {
+    md-grid-tile-header, .md-grid-tile-header,
+    md-grid-tile-footer, .md-grid-tile-footer {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -59,11 +59,11 @@ md-grid-list {
       }
     }
 
-    md-grid-tile-header {
+    md-grid-tile-header, .md-grid-tile-header {
       top: 0;
     }
 
-    md-grid-tile-footer {
+    md-grid-tile-footer, .md-grid-tile-footer {
       bottom: 0;
     }
   }
@@ -71,10 +71,10 @@ md-grid-list {
 }
 
 @media screen and (-ms-high-contrast: active) {
-  md-grid-tile {
+  md-grid-tile, .md-grid-tile {
     border: 1px solid #fff;
   }
-  md-grid-tile-footer {
+  md-grid-tile-footer, .md-grid-tile-footer {
     border-top: 1px solid #fff;
   }
 }

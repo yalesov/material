@@ -1,27 +1,31 @@
-md-menu-bar.md-THEME_NAME-theme {
+md-menu-bar.md-THEME_NAME-theme, .md-menu-bar.md-THEME_NAME-theme {
   & > button.md-button {
     color: '{{foreground-2}}';
     border-radius: 2px;
   }
 
-  md-menu.md-open > button, md-menu > button:focus {
+  md-menu.md-open > button, md-menu > button:focus,
+  .md-menu.md-open > button, .md-menu > button:focus {
     outline: none;
     background: '{{background-200}}';
   }
 
-  &.md-open:not(.md-keyboard-mode) md-menu:hover > button {
+  &.md-open:not(.md-keyboard-mode) md-menu:hover > button,
+  &.md-open:not(.md-keyboard-mode) .md-menu:hover > button {
     background-color: '{{ background-500-0.2}}';
   }
 
   &:not(.md-keyboard-mode):not(.md-open) {
     md-menu button:hover,
-    md-menu button:focus {
+    .md-menu button:hover,
+    md-menu button:focus,
+    .md-menu button:focus {
       background: transparent;
     }
   }
 }
 
-md-menu-content.md-THEME_NAME-theme {
+md-menu-content.md-THEME_NAME-theme, .md-menu-content.md-THEME_NAME-theme {
   .md-menu > .md-button:after {
     color: '{{background-A200-0.54}}';
   }
@@ -31,13 +35,13 @@ md-menu-content.md-THEME_NAME-theme {
   }
 }
 
-md-toolbar.md-THEME_NAME-theme.md-menu-toolbar {
+md-toolbar.md-THEME_NAME-theme.md-menu-toolbar, .md-toolbar.md-THEME_NAME-theme.md-menu-toolbar {
   background-color: '{{background-A100}}';
   color: '{{background-A200}}';
-  md-toolbar-filler {
+  md-toolbar-filler, .md-toolbar-filler {
     background-color: '{{primary-color}}';
     color: '{{background-A100-0.87}}';
-    md-icon {
+    md-icon, .md-icon {
       color: '{{background-A100-0.87}}';
     }
   }

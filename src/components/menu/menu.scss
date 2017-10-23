@@ -13,7 +13,7 @@ $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-it
   opacity: 0;
   border-radius: $menu-border-radius;
 
-  md-menu-divider {
+  md-menu-divider, .md-menu-divider {
     margin-top: $baseline-grid / 2;
     margin-bottom: $baseline-grid / 2;
     height: 1px;
@@ -22,7 +22,7 @@ $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-it
     width: 100%;
   }
 
-  md-menu-content > * {
+  md-menu-content > *, .md-menu-content > * {
     opacity: 0;
   }
 
@@ -36,7 +36,8 @@ $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-it
     opacity: 1;
     transition: $swift-ease-out;
     transition-duration: 200ms;
-    > md-menu-content > * {
+    > md-menu-content > *,
+    > .md-menu-content > * {
       opacity: 1;
       transition: $swift-ease-in;
       transition-duration: 200ms;
@@ -51,7 +52,7 @@ $max-dense-menu-height: 2 * $baseline-grid + $max-visible-items * $dense-menu-it
   }
 }
 
-md-menu-content {
+md-menu-content, .md-menu-content {
   display: flex;
   flex-direction: column;
   padding: $baseline-grid 0;
@@ -59,14 +60,14 @@ md-menu-content {
   overflow-y: auto;
   &.md-dense {
     max-height: $max-dense-menu-height;
-    md-menu-item {
+    md-menu-item, .md-menu-item {
       height: $dense-menu-item-height;
       min-height: 0px;
     }
   }
 }
 
-md-menu-item {
+md-menu-item, .md-menu-item {
   display: flex;
   flex-direction: row;
   min-height: $menu-item-height;
@@ -109,7 +110,7 @@ md-menu-item {
     padding-left: 2*$baseline-grid;
     padding-right: 2*$baseline-grid;
     width:100%;
-    md-icon {
+    md-icon, .md-icon {
       @include rtl(margin, auto 2*$baseline-grid auto 0,  auto 0 auto 2*$baseline-grid);
     }
     p {
@@ -126,7 +127,7 @@ md-menu-item {
   }
 }
 
-md-toolbar {
+md-toolbar, .md-toolbar {
   .md-menu {
     height: auto;
     margin: auto;
@@ -135,22 +136,22 @@ md-toolbar {
 }
 
 @media (max-width: $layout-breakpoint-sm - 1) {
-  md-menu-content {
+  md-menu-content, .md-menu-content {
     min-width: 112px;
   }
   @for $i from 3 through 7 {
-    md-menu-content[width="#{$i}"] {
+    md-menu-content[width="#{$i}"], .md-menu-content[width="#{$i}"] {
       min-width: $i * 56px;
     }
   }
 }
 
 @media (min-width: $layout-breakpoint-sm) {
-  md-menu-content {
+  md-menu-content, .md-menu-content {
     min-width: 96px;
   }
   @for $i from 3 through 7 {
-    md-menu-content[width="#{$i}"] {
+    md-menu-content[width="#{$i}"], .md-menu-content[width="#{$i}"] {
       min-width: $i * 64px;
     }
   }

@@ -1,4 +1,4 @@
-md-toolbar {
+md-toolbar, .md-toolbar {
   &.md-menu-toolbar {
     h2.md-toolbar-tools {
       line-height: 1rem;
@@ -16,7 +16,7 @@ md-toolbar {
   }
 }
 
-md-menu-bar {
+md-menu-bar, .md-menu-bar {
   padding: 0 2.5 * $baseline-grid;
   display: block;
   position: relative;
@@ -35,17 +35,17 @@ md-menu-bar {
     height: 5 * $baseline-grid;
   }
 
-  md-backdrop.md-menu-backdrop {
+  md-backdrop.md-menu-backdrop, .md-backdrop.md-menu-backdrop {
     z-index: -2;
   }
 }
 
-md-menu-content.md-menu-bar-menu.md-dense {
+md-menu-content.md-menu-bar-menu.md-dense, .md-menu-content.md-menu-bar-menu.md-dense {
   max-height: none;
   padding: 2 * $baseline-grid 0;
-  md-menu-item.md-indent {
+  md-menu-item.md-indent, .md-menu-item.md-indent {
     position: relative;
-    > md-icon {
+    > md-icon, > .md-icon {
       position: absolute;
       padding: 0;
       width: 24px;
@@ -67,11 +67,11 @@ md-menu-content.md-menu-bar-menu.md-dense {
       margin: 0 $baseline-grid;
     }
   }
-  md-menu-divider {
+  md-menu-divider, .md-menu-divider {
     margin: $baseline-grid 0;
   }
 
-  md-menu-item > .md-button, .md-menu > .md-button {
+  md-menu-item > .md-button, .md-menu-item > .md-button, .md-menu > .md-button {
     @include rtl(text-align, left, right);
   }
 

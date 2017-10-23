@@ -49,7 +49,7 @@ $md-calendar-height:
   border-collapse: collapse;
 }
 
-md-calendar {
+md-calendar, .md-calendar {
   font-size: 13px;
   user-select: none;
 }
@@ -127,11 +127,12 @@ md-calendar {
   font-weight: 500; // Roboto Medium
   @include rtl(padding, 0 0 0 $md-calendar-side-padding + $md-calendar-month-label-padding, rtl-value( 0 0 0 $md-calendar-side-padding + $md-calendar-month-label-padding));
 
-  md-calendar-month &:not(.md-calendar-month-label-disabled) {
+  md-calendar-month &:not(.md-calendar-month-label-disabled),
+  .md-calendar-month &:not(.md-calendar-month-label-disabled) {
     cursor: pointer;
   }
 
-  md-icon {
+  md-icon, .md-icon {
     @include rtl(transform, rotate(180deg), none);
   }
 

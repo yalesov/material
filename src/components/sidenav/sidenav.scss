@@ -2,7 +2,7 @@ $sidenav-mobile-width: 320px !default;
 $sidenav-desktop-width: 400px !default;
 $sidenav-min-space: 56px !default;
 
-md-sidenav {
+md-sidenav, .md-sidenav {
   box-sizing: border-box;
   position: absolute;
   flex-direction: column;
@@ -120,13 +120,13 @@ md-sidenav {
 }
 
 @media (min-width: $layout-breakpoint-xs) {
-  md-sidenav {
+  md-sidenav, .md-sidenav {
     max-width: $sidenav-desktop-width;
   }
 }
 
 @media (max-width: $sidenav-desktop-width + $sidenav-min-space) {
-  md-sidenav {
+  md-sidenav, .md-sidenav {
     width: calc(100% - #{$sidenav-min-space});
     min-width: calc(100% - #{$sidenav-min-space});
     max-width: calc(100% - #{$sidenav-min-space});

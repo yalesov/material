@@ -6,7 +6,7 @@ $progress-circular-indeterminate-duration: 1568.63ms !default;
 }
 
 // Used to avoid unnecessary layout
-md-progress-circular {
+md-progress-circular, .md-progress-circular {
     position: relative;
     display: block;
 

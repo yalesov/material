@@ -8,7 +8,7 @@ $md-datepicker-input-mask-height: 40px !default;
 $md-datepicker-button-padding: 8px !default;
 
 
-md-datepicker {
+md-datepicker, .md-datepicker {
   // Don't let linebreaks happen between the open icon-button and the input.
   white-space: nowrap;
   overflow: hidden;
@@ -16,7 +16,7 @@ md-datepicker {
 }
 
 .md-inline-form {
-  md-datepicker {
+  md-datepicker, .md-datepicker {
     margin-top: 12px;
   }
 }
@@ -52,7 +52,7 @@ md-datepicker {
 
 // If the datepicker is inside of a md-input-container
 ._md-datepicker-floating-label {
-  > md-datepicker {
+  > md-datepicker, > .md-datepicker {
     // Prevents the ripple on the triangle from being clipped.
     overflow: visible;
 
@@ -167,7 +167,7 @@ md-datepicker {
     opacity: 1;
   }
 
-  md-calendar:focus {
+  md-calendar:focus, .md-calendar:focus {
     outline: none;
   }
 }
@@ -210,7 +210,7 @@ md-datepicker {
 }
 
 // Disabled state for all elements of the picker.
-md-datepicker[disabled] {
+md-datepicker[disabled], .md-datepicker[disabled] {
   .md-datepicker-input-container {
     border-bottom-color: transparent;
   }

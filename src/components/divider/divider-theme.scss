@@ -1,4 +1,4 @@
-md-divider.md-THEME_NAME-theme {
+md-divider.md-THEME_NAME-theme, .md-divider.md-THEME_NAME-theme {
   border-top-color: '{{foreground-4}}';
 }
 
@@ -8,7 +8,7 @@ md-divider.md-THEME_NAME-theme {
 .layout-md-row, .layout-gt-md-row,
 .layout-lg-row, .layout-gt-lg-row,
 .layout-xl-row {
-  & > md-divider.md-THEME_NAME-theme {
+  & > md-divider.md-THEME_NAME-theme, & > .md-divider.md-THEME_NAME-theme {
     border-right-color: '{{foreground-4}}';
   }
 }

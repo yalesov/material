@@ -12,7 +12,7 @@ $radio-margin: 16px !default;
   }
 }
 
-md-radio-button {
+md-radio-button, .md-radio-button {
   box-sizing: border-box;
   display: block;
   margin-bottom: $radio-margin;
@@ -113,7 +113,7 @@ md-radio-button {
   }
 }
 
-md-radio-group {
+md-radio-group, .md-radio-group {
   /** Layout adjustments for the radio group. */
   &.layout-column,
   &.layout-xs-column, &.layout-gt-xs-column,
@@ -121,7 +121,7 @@ md-radio-group {
   &.layout-md-column, &.layout-gt-md-column,
   &.layout-lg-column, &.layout-gt-lg-column,
   &.layout-xl-column {
-    md-radio-button {
+    md-radio-button, .md-radio-button {
       margin-bottom: $radio-margin;
     }
   }
@@ -132,7 +132,7 @@ md-radio-group {
   &.layout-md-row, &.layout-gt-md-row,
   &.layout-lg-row, &.layout-gt-lg-row,
   &.layout-xl-row {
-    md-radio-button {
+    md-radio-button, .md-radio-button {
       margin-top: 0;
       margin-bottom: 0;
       @include rtl(margin-left, 0, $radio-margin);
@@ -158,15 +158,16 @@ md-radio-group {
     }
   }
 
-  &[disabled] md-radio-button {
+  &[disabled] md-radio-button,
+  &[disabled] .md-radio-button {
     @include md-radio-button-disabled();
   }
 }
 
 .md-inline-form {
-  md-radio-group {
+  md-radio-group, .md-radio-group {
     margin: 18px 0 19px;
-    md-radio-button {
+    md-radio-button, .md-radio-button {
       display: inline-block;
       height: 30px;
       padding: 2px;
@@ -178,7 +179,8 @@ md-radio-group {
 }
 
 @media screen and (-ms-high-contrast: active) {
-  md-radio-button.md-default-theme .md-on {
+  md-radio-button.md-default-theme .md-on,
+  .md-radio-button.md-default-theme .md-on {
     background-color: #fff;
   }
 }

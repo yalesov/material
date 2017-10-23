@@ -1,7 +1,7 @@
 $button-fab-width: rem(5.600) !default;
 $icon-button-margin: rem(0.600) !default;
 
-md-fab-toolbar {
+md-fab-toolbar, .md-fab-toolbar {
   $icon-delay: 200ms;
 
   // Include the top/left/bottom/right fab positions
@@ -21,7 +21,7 @@ md-fab-toolbar {
     height: $button-fab-width + ($icon-button-margin * 2);
   }
 
-  md-fab-trigger {
+  md-fab-trigger, .md-fab-trigger {
     position: absolute;
     z-index: $z-index-fab;
 
@@ -38,7 +38,7 @@ md-fab-toolbar {
       transition: $swift-ease-in;
     }
 
-    md-icon {
+    md-icon, .md-icon {
       position: relative;
       z-index: $z-index-fab + 2;
 
@@ -50,7 +50,7 @@ md-fab-toolbar {
   }
 
   &.md-left {
-    md-fab-trigger {
+    md-fab-trigger, .md-fab-trigger {
       @include rtl-prop(right, left, 0, auto);
     }
 
@@ -74,7 +74,7 @@ md-fab-toolbar {
   }
 
   &.md-right {
-    md-fab-trigger {
+    md-fab-trigger, .md-fab-trigger {
       @include rtl-prop(left, right, 0, auto);
     }
 
@@ -83,7 +83,7 @@ md-fab-toolbar {
     }
   }
 
-  md-toolbar {
+  md-toolbar, .md-toolbar {
     background-color: transparent !important;
     pointer-events: none;
     z-index: $z-index-fab + 3;
@@ -108,10 +108,10 @@ md-fab-toolbar {
    * Hover styling
    */
   &.md-is-open {
-    md-fab-trigger > button {
+    md-fab-trigger > button, .md-fab-trigger > button {
       box-shadow: none;
 
-      md-icon {
+      md-icon, .md-icon {
         opacity: 0;
       }
     }

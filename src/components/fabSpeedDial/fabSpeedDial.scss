@@ -1,4 +1,4 @@
-md-fab-speed-dial {
+md-fab-speed-dial, .md-fab-speed-dial {
   position: relative;
   display: flex;
   align-items: center;
@@ -13,7 +13,7 @@ md-fab-speed-dial {
     // Turn off pointer events when closed
     pointer-events: none;
 
-    md-fab-trigger, .md-fab-action-item {
+    md-fab-trigger, .md-fab-trigger, .md-fab-action-item {
       // Always make the trigger and action items always have pointer events (the tooltip looks
       // for the first parent with pointer-events, so we must set this for tooltips to work)
       pointer-events: auto;
@@ -35,7 +35,7 @@ md-fab-speed-dial {
     }
   }
 
-  md-fab-actions {
+  md-fab-actions, .md-fab-actions {
     display: flex;
 
     // Set the height so that the z-index in the JS animation works
@@ -49,11 +49,11 @@ md-fab-speed-dial {
   &.md-down {
     flex-direction: column;
 
-    md-fab-trigger {
+    md-fab-trigger, .md-fab-trigger {
       order: 1;
     }
 
-    md-fab-actions {
+    md-fab-actions, .md-fab-actions {
       flex-direction: column;
       order: 2;
     }
@@ -62,11 +62,11 @@ md-fab-speed-dial {
   &.md-up {
     flex-direction: column;
 
-    md-fab-trigger {
+    md-fab-trigger, .md-fab-trigger {
       order: 2;
     }
 
-    md-fab-actions {
+    md-fab-actions, .md-fab-actions {
       flex-direction: column-reverse;
       order: 1;
     }
@@ -75,11 +75,11 @@ md-fab-speed-dial {
   &.md-left {
     flex-direction: row;
 
-    md-fab-trigger {
+    md-fab-trigger, .md-fab-trigger {
       order: 2;
     }
 
-    md-fab-actions {
+    md-fab-actions, .md-fab-actions {
       flex-direction: row-reverse;
       order: 1;
 
@@ -92,11 +92,11 @@ md-fab-speed-dial {
   &.md-right {
     flex-direction: row;
 
-    md-fab-trigger {
+    md-fab-trigger, .md-fab-trigger {
       order: 1;
     }
 
-    md-fab-actions {
+    md-fab-actions, .md-fab-actions {
       flex-direction: row;
       order: 2;
 

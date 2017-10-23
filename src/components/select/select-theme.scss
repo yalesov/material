@@ -1,7 +1,8 @@
-md-input-container {
+md-input-container, .md-input-container {
 
   // The asterisk of the select should always use the warn color.
-  md-select.md-THEME_NAME-theme .md-select-value {
+  md-select.md-THEME_NAME-theme .md-select-value,
+  .md-select.md-THEME_NAME-theme .md-select-value {
     span:first-child:after {
       color: '{{warn-A700}}'
     }
@@ -9,7 +10,8 @@ md-input-container {
 
   // When the select is blurred and not invalid then the asterisk should use the foreground color.
   &:not(.md-input-focused):not(.md-input-invalid) {
-    md-select.md-THEME_NAME-theme .md-select-value {
+    md-select.md-THEME_NAME-theme .md-select-value,
+    .md-select.md-THEME_NAME-theme .md-select-value {
       span:first-child:after {
         color: '{{foreground-3}}';
       }
@@ -17,7 +19,8 @@ md-input-container {
   }
 
   &.md-input-focused:not(.md-input-has-value) {
-    md-select.md-THEME_NAME-theme .md-select-value {
+    md-select.md-THEME_NAME-theme .md-select-value,
+    .md-select.md-THEME_NAME-theme .md-select-value {
       color: '{{primary-color}}';
 
       &.md-select-placeholder {
@@ -27,19 +30,21 @@ md-input-container {
   }
 
   &.md-input-invalid {
-    md-select.md-THEME_NAME-theme .md-select-value {
+    md-select.md-THEME_NAME-theme .md-select-value,
+    .md-select.md-THEME_NAME-theme .md-select-value {
       color: '{{warn-A700}}' !important;
       border-bottom-color: '{{warn-A700}}' !important;
     }
 
-    md-select.md-THEME_NAME-theme.md-no-underline .md-select-value {
+    md-select.md-THEME_NAME-theme.md-no-underline .md-select-value,
+    .md-select.md-THEME_NAME-theme.md-no-underline .md-select-value {
       border-bottom-color: transparent !important;
     }
   }
 
 }
 
-md-select.md-THEME_NAME-theme {
+md-select.md-THEME_NAME-theme, .md-select.md-THEME_NAME-theme {
   &[disabled] .md-select-value {
     border-bottom-color: transparent;
     background-image: linear-gradient(to right, '{{foreground-3}}' 0%, '{{foreground-3}}' 33%, transparent 0%);
@@ -114,15 +119,15 @@ md-select.md-THEME_NAME-theme {
   }
 }
 
-md-select-menu.md-THEME_NAME-theme {
-  md-content {
+md-select-menu.md-THEME_NAME-theme, .md-select-menu.md-THEME_NAME-theme {
+  md-content, .md-content {
     background: '{{background-A100}}';
 
-    md-optgroup {
+    md-optgroup, .md-optgroup {
       color: '{{background-600-0.87}}';
     }
 
-    md-option {
+    md-option, .md-option {
       color: '{{background-900-0.87}}';
 
       &[disabled] {
@@ -157,7 +162,8 @@ md-select-menu.md-THEME_NAME-theme {
 .md-checkbox-enabled.md-THEME_NAME-theme {
   @include checkbox-primary('[selected]');
 
-  md-option .md-text {
+  md-option .md-text,
+  .md-option .md-text {
     color: '{{background-900-0.87}}';
   }
 }

@@ -1,17 +1,17 @@
-md-progress-circular.md-THEME_NAME-theme {
+md-progress-circular.md-THEME_NAME-theme, .md-progress-circular.md-THEME_NAME-theme {
 
-  path {
+  path, .path {
     stroke: '{{primary-color}}';
   }
 
   &.md-warn {
-    path {
+    path, .path {
       stroke: '{{warn-color}}';
     }
   }
 
   &.md-accent {
-    path {
+    path, .path {
       stroke: '{{accent-color}}';
     }
   }
