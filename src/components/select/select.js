@@ -185,7 +185,7 @@ function SelectDirective($mdSelect, $mdUtil, $mdConstant, $mdTheming, $mdAria, $
   var NAVIGATION_KEYS = [keyCodes.SPACE, keyCodes.ENTER, keyCodes.UP_ARROW, keyCodes.DOWN_ARROW];
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['^?mdInputContainer', 'mdSelect', 'ngModel', '?^form'],
     compile: compile,
     controller: function() {
@@ -613,7 +613,7 @@ function SelectMenuDirective($parse, $mdUtil, $mdConstant, $mdTheming) {
   // which would interfere with the md-select-header's access to the
   // parent scope.
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['mdSelectMenu'],
     scope: false,
     controller: SelectMenuController,
@@ -924,7 +924,7 @@ function SelectMenuDirective($parse, $mdUtil, $mdConstant, $mdTheming) {
 function OptionDirective($mdButtonInkRipple, $mdUtil, $mdTheming) {
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['mdOption', '^^mdSelectMenu'],
     controller: OptionController,
     compile: compile
@@ -1054,7 +1054,7 @@ function OptionDirective($mdButtonInkRipple, $mdUtil, $mdTheming) {
 
 function OptgroupDirective() {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     compile: compile
   };
   function compile(el, attrs) {
@@ -1082,7 +1082,7 @@ function OptgroupDirective() {
 
 function SelectHeaderDirective() {
   return {
-    restrict: 'E',
+    restrict: 'EA',
   };
 }
 

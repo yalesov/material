@@ -58,7 +58,7 @@ function MdCheckboxDirective(inputDirective, $mdAria, $mdConstant, $mdTheming, $
   inputDirective = inputDirective[0];
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     transclude: true,
     require: ['^?mdInputContainer', '?ngModel', '?^form'],
     priority: $mdConstant.BEFORE_NG_ARIA,

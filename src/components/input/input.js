@@ -103,7 +103,7 @@ function mdInputContainerDirective($mdTheming, $parse) {
   }, []).join(",");
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     compile: compile,
     controller: ContainerCtrl
   };
@@ -158,7 +158,7 @@ function mdInputContainerDirective($mdTheming, $parse) {
 
 function labelDirective() {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: '^?mdInputContainer',
     link: function(scope, element, attr, containerCtrl) {
       if (!containerCtrl || attr.mdNoFloat || element.hasClass('md-container-ignore')) return;
@@ -304,7 +304,7 @@ function labelDirective() {
 
 function inputTextareaDirective($mdUtil, $window, $mdAria, $timeout, $mdGesture) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['^?mdInputContainer', '?ngModel', '?^form'],
     link: postLink
   };

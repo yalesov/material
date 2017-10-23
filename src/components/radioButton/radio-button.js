@@ -56,7 +56,7 @@ function mdRadioGroupDirective($mdUtil, $mdConstant, $mdTheming, $timeout) {
   RadioGroupController.prototype = createRadioGroupControllerProto();
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     controller: ['$element', RadioGroupController],
     require: ['mdRadioGroup', '?ngModel'],
     link: { pre: linkRadioGroup }
@@ -253,7 +253,7 @@ function mdRadioButtonDirective($mdAria, $mdUtil, $mdTheming) {
   var CHECKED_CSS = 'md-checked';
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: '^mdRadioGroup',
     transclude: true,
     template: '<div class="md-container" md-ink-ripple md-ink-ripple-checkbox>' +

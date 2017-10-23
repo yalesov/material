@@ -192,7 +192,7 @@ angular
 function mdIconDirective($mdIcon, $mdTheming, $mdAria, $sce) {
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     link : postLink
   };
 

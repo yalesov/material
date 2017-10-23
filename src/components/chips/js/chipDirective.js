@@ -37,7 +37,7 @@ function MdChip($mdTheming, $mdUtil, $compile, $timeout) {
   var deleteHintTemplate = $mdUtil.processTemplate(DELETE_HINT_TEMPLATE);
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['^?mdChips', 'mdChip'],
     link: postLink,
     controller: 'MdChipCtrl'

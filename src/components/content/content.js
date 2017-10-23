@@ -52,7 +52,7 @@ angular.module('material.components.content', [
 
 function mdContentDirective($mdTheming) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     controller: ['$scope', '$element', ContentController],
     link: function(scope, element) {
       element.addClass('_md');     // private md component indicator for styling

@@ -107,7 +107,7 @@ angular.module('material.components.navBar', ['material.core'])
 
 function MdNavBar($mdAria, $mdTheming) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     transclude: true,
     controller: MdNavBarController,
     controllerAs: 'ctrl',
@@ -390,7 +390,7 @@ MdNavBarController.prototype.onKeydown = function(e) {
  */
 function MdNavItem($mdAria, $$rAF) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['mdNavItem', '^mdNavBar'],
     controller: MdNavItemController,
     bindToController: true,

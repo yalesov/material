@@ -6,7 +6,7 @@ angular
 
 function MenuDividerDirective() {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     compile: function(templateEl, templateAttrs) {
       if (!templateAttrs.role) {
         templateEl[0].setAttribute('role', 'separator');

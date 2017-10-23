@@ -26,7 +26,7 @@
    */
   function MdFabActionsDirective($mdUtil) {
     return {
-      restrict: 'E',
+      restrict: 'EA',
 
       require: ['^?mdFabSpeedDial', '^?mdFabToolbar'],
 

@@ -51,7 +51,7 @@ function MdSwitch(mdCheckboxDirective, $mdUtil, $mdConstant, $parse, $$rAF, $mdG
   var checkboxDirective = mdCheckboxDirective[0];
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     priority: $mdConstant.BEFORE_NG_ARIA,
     transclude: true,
     template:

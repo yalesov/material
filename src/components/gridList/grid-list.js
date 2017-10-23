@@ -95,7 +95,7 @@ angular.module('material.components.gridList', ['material.core'])
  */
 function GridListDirective($interpolate, $mdConstant, $mdGridLayout, $mdMedia) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     controller: GridListController,
     scope: {
       mdOnLayout: '&'
@@ -718,7 +718,7 @@ function GridLayoutFactory($mdUtil) {
  */
 function GridTileDirective($mdMedia) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: '^mdGridList',
     template: '<figure ng-transclude></figure>',
     transclude: true,

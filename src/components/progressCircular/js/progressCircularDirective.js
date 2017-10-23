@@ -68,7 +68,7 @@ function MdProgressCircularDirective($window, $mdProgressCircular, $mdTheming,
   var INDETERMINATE_CLASS = 'md-mode-indeterminate';
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     scope: {
       value: '@',
       mdDiameter: '@',

@@ -24,7 +24,7 @@ angular
   })
   .directive('themePreview', function () {
     return {
-      restrict: 'E',
+      restrict: 'EA',
       templateUrl: 'themePreview.tmpl.html',
       scope: {
         primary: '=',

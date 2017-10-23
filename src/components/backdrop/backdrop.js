@@ -23,7 +23,7 @@ angular
     var ERROR_CSS_POSITION = '<md-backdrop> may not work properly in a scrolled, static-positioned parent container.';
 
     return {
-      restrict: 'E',
+      restrict: 'EA',
       link: postLink
     };
 

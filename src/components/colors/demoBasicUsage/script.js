@@ -9,7 +9,7 @@ angular.module('colorsDemo', ['ngMaterial'])
   })
   .directive('regularCard', function () {
     return {
-      restrict: 'E',
+      restrict: 'EA',
       templateUrl: 'regularCard.tmpl.html',
       scope: {
         name: '@',
@@ -18,7 +18,7 @@ angular.module('colorsDemo', ['ngMaterial'])
   })
   .directive('userCard', function () {
     return {
-      restrict: 'E',
+      restrict: 'EA',
       templateUrl: 'userCard.tmpl.html',
       scope: {
         name: '@',

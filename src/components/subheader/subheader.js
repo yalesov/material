@@ -54,7 +54,7 @@ angular
 
 function MdSubheaderDirective($mdSticky, $compile, $mdTheming, $mdUtil, $mdAria) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     replace: true,
     transclude: true,
     template: (

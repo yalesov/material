@@ -49,7 +49,7 @@ angular
  */
 function MdDialogDirective($$rAF, $mdTheming, $mdDialog) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     link: function(scope, element) {
       element.addClass('_md');     // private md component indicator for styling
 

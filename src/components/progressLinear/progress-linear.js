@@ -65,7 +65,7 @@ function MdProgressLinearDirective($mdTheming, $mdUtil, $log) {
   var DISABLED_CLASS = "_md-progress-linear-disabled";
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     template: '<div class="md-container">' +
       '<div class="md-dashed"></div>' +
       '<div class="md-bar md-bar1"></div>' +

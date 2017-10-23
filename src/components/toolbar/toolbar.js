@@ -87,7 +87,7 @@ function mdToolbarDirective($$rAF, $mdConstant, $mdUtil, $mdTheming, $animate) {
 
   return {
     template: '',
-    restrict: 'E',
+    restrict: 'EA',
 
     link: function(scope, element, attr) {
 

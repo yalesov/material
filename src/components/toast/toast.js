@@ -14,7 +14,7 @@ angular.module('material.components.toast', [
 /* @ngInject */
 function MdToastDirective($mdToast) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     link: function postLink(scope, element) {
       element.addClass('_md');     // private md component indicator for styling
       

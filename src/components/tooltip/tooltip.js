@@ -61,7 +61,7 @@ function MdTooltipDirective($timeout, $window, $$rAF, $document, $interpolate,
   };
 
   return {
-    restrict: 'E',
+    restrict: 'EA',
     priority: 210, // Before ngAria
     scope: {
       mdZIndex: '=?mdZIndex',

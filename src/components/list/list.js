@@ -37,7 +37,7 @@ angular.module('material.components.list', [
 
 function mdListDirective($mdTheming) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     compile: function(tEl) {
       tEl[0].setAttribute('role', 'list');
       return $mdTheming;
@@ -230,7 +230,7 @@ function mdListDirective($mdTheming) {
 function mdListItemDirective($mdAria, $mdConstant, $mdUtil, $timeout) {
   var proxiedTypes = ['md-checkbox', 'md-switch', 'md-menu'];
   return {
-    restrict: 'E',
+    restrict: 'EA',
     controller: 'MdListController',
     compile: function(tEl, tAttrs) {
 

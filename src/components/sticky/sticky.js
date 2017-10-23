@@ -40,7 +40,7 @@ angular
  *         '</md-select>';
  *
  *       return {
- *         restrict: 'E',
+ *         restrict: 'EA',
  *         replace: true,
  *         template: SELECT_TEMPLATE,
  *         link: function(scope,element) {
@@ -55,7 +55,7 @@ angular
  *   angular.module('myModule')
  *     .directive('stickyText', function($mdSticky, $compile) {
  *       return {
- *         restrict: 'E',
+ *         restrict: 'EA',
  *         template: '<span>Sticky Text</span>',
  *         link: function(scope,element) {
  *           $mdSticky(scope, element);

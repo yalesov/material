@@ -95,7 +95,7 @@ angular
 /* @ngInject */
 function MenuBarDirective($mdUtil, $mdTheming) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: 'mdMenuBar',
     controller: 'MenuBarController',
 

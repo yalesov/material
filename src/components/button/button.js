@@ -28,7 +28,7 @@ angular
  */
 function MdAnchorDirective($mdTheming) {
   return {
-    restrict : 'E',
+    restrict : 'EA',
     link : function postLink(scope, element) {
       // Make sure to inherit theme so stand-alone anchors
       // support theme colors for md-primary, md-accent, etc.

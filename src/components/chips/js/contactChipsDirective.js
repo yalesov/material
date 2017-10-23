@@ -109,7 +109,7 @@ function MdContactChips($mdTheming, $mdUtil) {
     template: function(element, attrs) {
       return MD_CONTACT_CHIPS_TEMPLATE;
     },
-    restrict: 'E',
+    restrict: 'EA',
     controller: 'MdContactChipsCtrl',
     controllerAs: '$mdContactChipsCtrl',
     bindToController: true,

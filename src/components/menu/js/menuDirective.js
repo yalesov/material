@@ -168,7 +168,7 @@ angular
 function MenuDirective($mdUtil) {
   var INVALID_PREFIX = 'Invalid HTML for md-menu: ';
   return {
-    restrict: 'E',
+    restrict: 'EA',
     require: ['mdMenu', '?^mdMenuBar'],
     controller: 'mdMenuCtrl', // empty function to be built by link
     scope: true,

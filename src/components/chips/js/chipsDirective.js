@@ -256,7 +256,7 @@
         return templates.chips;
       },
       require: ['mdChips'],
-      restrict: 'E',
+      restrict: 'EA',
       controller: 'MdChipsCtrl',
       controllerAs: '$mdChipsCtrl',
       bindToController: true,

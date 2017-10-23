@@ -15,7 +15,7 @@ angular
 /* @ngInject */
 function MdBottomSheetDirective($mdBottomSheet) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     link : function postLink(scope, element) {
       element.addClass('_md');     // private md component indicator for styling
 

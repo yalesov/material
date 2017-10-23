@@ -97,7 +97,7 @@
    */
   function MdFabSpeedDialDirective() {
     return {
-      restrict: 'E',
+      restrict: 'EA',
 
       scope: {
         direction: '@?mdDirection',

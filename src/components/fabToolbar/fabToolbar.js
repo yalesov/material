@@ -73,7 +73,7 @@
    */
   function MdFabToolbarDirective() {
     return {
-      restrict: 'E',
+      restrict: 'EA',
       transclude: true,
       template: '<div class="md-fab-toolbar-wrapper">' +
       '  <div class="md-fab-toolbar-content" ng-transclude></div>' +

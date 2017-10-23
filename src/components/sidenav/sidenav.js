@@ -246,7 +246,7 @@ function SidenavFocusDirective() {
 function SidenavDirective($mdMedia, $mdUtil, $mdConstant, $mdTheming, $mdInteraction, $animate,
                           $compile, $parse, $log, $q, $document, $window, $$rAF) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     scope: {
       isOpen: '=?mdIsOpen'
     },

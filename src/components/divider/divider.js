@@ -28,7 +28,7 @@ angular.module('material.components.divider', [
  */
 function MdDividerDirective($mdTheming) {
   return {
-    restrict: 'E',
+    restrict: 'EA',
     link: $mdTheming
   };
 }
